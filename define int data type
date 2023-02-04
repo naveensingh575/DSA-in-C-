@@ -3,6 +3,8 @@ using namespace std;
 int main() {
   int num;
   num = 07;
-  cout << "entered no. is :" << num << endl ;
+  string str = "Entered no. is";
+  char ch = ':';
+  cout << str << ch << num << endl ;
   return 0;
 }
