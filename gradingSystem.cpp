@@ -4,21 +4,33 @@ int main() {
   int marks;
   cout << "Enter marks:";
   cin >> marks;
-  if(marks >= 90)
+  if(marks >= 0  && marks <= 100 )
   {
-    cout << "A";
-  }
-  else if(marks >= 80)
-  {
-    cout << "B";
-  }
-  else if(marks >= 60)
-  {
-    cout << "C";
+    if(marks >= 90)
+    {
+      cout << "A";
+    }
+    else if(marks >= 80)
+    {
+      cout << "B";
+    }
+    else if(marks >= 60)
+    {
+      cout << "C";
+    }
+    else if (marks >= 40)
+    {
+      cout << "D";
+    }
+    else
+    {
+      cout << "F";
+    }
+    
   }
   else
   {
-    cout << "F";
+    cout << "Please enter correct marks";
   }
   return 0;
 }
