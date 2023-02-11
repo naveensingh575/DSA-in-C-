@@ -1,13 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-  for(int row =0; row <3; row++)
+
+int main() {
+
+int rowCount, colCount;
+  cin >> rowCount;
+  cin >> colCount;
+  for(int row =0; row < rowCount; row++)
   {
-      for(int col =0; col <5; col++)
-      {
+    // fiest and last row
+     if(row ==0 || row == rowCount-1)
+     {
+       for(int col =0; col <colCount; col++)
+       {
          cout << "* ";
-      }
-      cout << endl;
+       }
+     }
+     else
+     {
+       //print first *
+       cout << "* ";
+
+       for(int col =1; col < colCount -1; col++)
+       {
+         //print space
+         cout << "  ";
+      
+       }
+       //print last *
+       cout <<"*";
+     }
+    cout << endl;
   }
-  return 0;
+  
 }
