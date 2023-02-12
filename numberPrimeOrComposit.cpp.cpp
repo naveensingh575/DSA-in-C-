@@ -18,8 +18,7 @@ int main()
         if(num%i == 0)
         {
           cout << "composit number";
-          goto END;
-          break;
+          return 0;
         }
         
       }
@@ -31,6 +30,5 @@ int main()
   {
     cout << "Enter a no. gtrater than zero";
   }
-  END:
   return 0;
 }
